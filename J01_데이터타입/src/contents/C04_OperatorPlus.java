@@ -16,6 +16,9 @@ A ÷ B = 몫(/) ~ 나머지(%)
 7 ÷ 3 = 2 ~ 1	
 14 ÷ 3 = 4 ~ 2
 
+# 증감 연산자(++, --)
+변수의 값을 1만큼 증가 또는 감소시켜서 다시 저장하는 연산자
+
 */
 package contents;
 
@@ -49,6 +52,30 @@ public class C04_OperatorPlus {
 		System.out.println("평균: " + avg);
 		double avg2 = sum / 3.0;
 		System.out.println("평균2: " + avg2);
+		
+		/* 증감연산자 */
+		int a = 10;
+		a++; // a = a + 1;
+		System.out.println("a = " + a);
+		
+		int b = 10;
+		b--; // b = b - 1;
+		System.out.println("b = " + b);
+		
+		int c = 10;
+		++c; 
+		System.out.println("c = " + c);
+		
+		int d = 10;
+		--d;
+		System.out.println("d = " + d);
+		
+		int k = 10;
+		System.out.println("k++: " + (k++));
+		System.out.println("k: " + k);
+		
+		k = 10; 
+		System.out.println("++k: " + (++k));
 	}
 }
 
