@@ -10,6 +10,12 @@
 
 # 정수 난수 생성
 	객체이름.nextInt(개수) + 시작값;
+	
+# 실수 난수 생성
+	객체이름.nextDouble()*범위 + 시작값;
+	
+# true/false 랜덤 생성
+	객체이름.nextBoolean();
 
 */
 package contents;
@@ -46,6 +52,20 @@ public class API_Random {
 		}else {
 			System.out.println("6의 약수가 아닙니다.");
 		}
+		
+		/* 랜덤 실수 출력 */
+		//0~1 사이 랜덤한 실수 출력(0이상 1미만)
+		System.out.println(rd.nextDouble());
+		
+		//1~10 사이 랜덤한 실수 출력(1이상 10미만)
+		System.out.println(rd.nextDouble()*9 + 1);
+		
+		//10~15 랜덤한 정수 출력(10이상 15미만)
+		System.out.println((int)(rd.nextDouble()*5 + 10));
+		
+		/* 랜덤 true/false 출력 */
+		System.out.println(rd.nextBoolean());
+		
 	}
 }
 
