@@ -37,23 +37,25 @@ public class Prac07 {
 		}
 		System.out.println();
 		
-		for (int i = 1; i <= 5; i++) {
-			for (int j = 1; j <= 5; j++) {
-				System.out.print(j+5*(i-1)+"\t");
+		//외부for과 내부for의 반복변수로 만든 일반식 이용 
+		for (int i = 0; i < 5; i++) {
+			int startNum = 1 + 5*i;
+			for (int j = 0; j < 5; j++) {
+				System.out.print((startNum+j)+"\t");
 			}
 			System.out.println();
 		}
 		
 		//Q2
-		System.out.println();
-		
-		for (int i = 0; i < 5; i++) {
-			int startNum = 5 + i*5;
-			for (int j = 0; j < 5; j++) {
-				System.out.print( startNum - j + "\t");
-			}
-			System.out.println();
-		}
+//		System.out.println();
+//		
+//		for (int i = 0; i < 5; i++) {
+//			int startNum = 5 + 5*i;
+//			for (int j = 0; j < 5; j++) {
+//				System.out.print( (startNum - j) + "\t");
+//			}
+//			System.out.println();
+//		}
 	}
 }
 
