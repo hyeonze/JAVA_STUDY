@@ -12,7 +12,6 @@ Q.  회원 정보를 만드는 프로그램을 만들어 봅시다.
 	Tip)
     문자열.length(): 문자열 길이 구하기 
     nextLine(): 문자열 한줄 입력 받기  
-	
 	user_id.equals(문자열): 같으면 true, 다르면 false
 	
     ↓ Console ↓
@@ -38,9 +37,32 @@ Q.  회원 정보를 만드는 프로그램을 만들어 봅시다.
 */
 package account;
 
+import java.util.Scanner;
+
 public class Join {
 	public static void main(String[] args) {
-
+		Scanner sc = new Scanner(System.in); 
+		
+		while(true) {
+			System.out.println("*************회원가입 화면*************\r\n"
+					+ "회원으로 사용할 아이디와 비밀번호를 생성해주세요");
+			System.out.print("사용할 아이디: ");
+			String user_id = sc.nextLine();
+			System.out.print("비밀번호 생성: ");
+			String user_pw = sc.nextLine();
+			
+			if(user_id.length()<4) {
+				System.out.println("!!아이디를 4글자 이상으로 생성해야 합니다.");
+				System.out.println("다시 입력해 주세요.");
+			}else if(user_pw.length()<4) {
+				System.out.println("!!비밀번호를 4글자 이상으로 생성해야 합니다.");
+				System.out.println("다시 입력해 주세요.");
+			}else {
+				System.out.println("회원 가입이 성공적으로 이루어졌습니다!");
+				break;
+			}
+		}
+		
 	}
 }
 
