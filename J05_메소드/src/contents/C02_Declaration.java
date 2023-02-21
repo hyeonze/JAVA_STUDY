@@ -16,6 +16,10 @@ O		O			int func(int num){return 10;}
 3. 리턴타입(출력)과 매개변수(입력) 구성을 고려하여 메소드를 만든다.
 4. 메소드이름과 매개변수를 입력하여 메소드를 사용한다.
 
+매개변수(parameter): 메소드 선언시 ()안에 필요한 변수. variable
+인자(argument): 메소드 호출시 전달되는 데이터(값). value
+("인자" = "인수" = "매개값")
+
 */
 package contents;
 
@@ -45,12 +49,12 @@ public class C02_Declaration {
 	
 	//Case4) 리턴O, 매개변수O 메소드
 	//	예제: 매개변수로 세 정수를 입력받고 평균값을 리턴하는 메소드를 작성하고 실행하시오.
-	static double average(int a, int b, int c) {
+	static double average(int a, int b, int c) { //a,b,c는 매개변수(parameter)
 		return (a+b+c)/3.0;
 	}
 	
 	//예제: 정수 배열을 매개값으로 받아 평균을 리턴하는 메소드를 선언
-	static double arrAverage(int[] arr) {
+	static double arrAverage(int[] arr) {//arr은 매개변수
 		int sum = 0;
 		for (int i = 0; i < arr.length; i++) {
 			sum += arr[i];
@@ -71,14 +75,14 @@ public class C02_Declaration {
 		repeatMsg("2월의 절반", 4);
 		
 		System.out.println("=====Case4=====");
-		double avg = average(5, 10, 20);
+		double avg = average(5, 10, 20); //5, 10, 20은 인자(argument)
 		System.out.println("세 수의 평균: " + avg);
 		
 		int[] num1 = {5, 10, 20};
-		System.out.println("num1배열의 평균: " + arrAverage(num1));
+		System.out.println("num1배열의 평균: " + arrAverage(num1));//num1은 인자
 		
 		int[] num2 = { 10, 20, 30, 40, 50, 60 };
-		System.out.println("num2배열의 평균: " + arrAverage(num2));
+		System.out.println("num2배열의 평균: " + arrAverage(num2));//num2는 인자
 	}
 }
 

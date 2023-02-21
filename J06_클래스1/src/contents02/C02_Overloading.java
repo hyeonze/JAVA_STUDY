@@ -9,8 +9,6 @@
 */
 package contents02;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 public class C02_Overloading {
 	public static void main(String[] args) {
 		/* 사각형 형태에 따른 넓이 구하기 */
@@ -43,6 +41,14 @@ public class C02_Overloading {
 		//소스 1개인 와플을 n개 주문
 		String wafName3 = waf.name("누텔라", 3);//매개값 2개(문자열, 정수)
 		System.out.println(wafName3 + " 주문하였습니다.");
+		
+		/* 출력문 println도 오버로딩된 메소드 */ 
+		//println우클릭 - Open Declaration에서 메소드 선언 확인
+		System.out.println();
+		System.out.println(10);
+		System.out.println('A');
+		System.out.println("println overloading");
+		System.out.print("");
 	}
 }
 
