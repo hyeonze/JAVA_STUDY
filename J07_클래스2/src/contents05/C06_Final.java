@@ -39,6 +39,7 @@ public class C06_Final {
 		int min = Integer.MIN_VALUE;
 		System.out.println("MAX_VALUE: " + max);
 		System.out.println("MIN_VALUE: " + min);
+//		int check = 2147483648;
 	}
 }
 
